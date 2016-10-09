@@ -26,7 +26,7 @@ ggplot(totalByYear, aes(factor(year), Emissions)) +
   ggtitle('Total emissions from coal (1999–2008)') + 
   xlab('Year') +
   ylab('Emission PM2.5 in Kilotons') + 
-  geom_text(aes(label=round(Emissions,digits=2), size=2, hjust=1.5, vjust=1.5))
+  geom_text(aes(label=round(Emissions,digits=2), color="yellow", size=2, hjust=1.5, vjust=1.5))
 
 dev.off()
 
